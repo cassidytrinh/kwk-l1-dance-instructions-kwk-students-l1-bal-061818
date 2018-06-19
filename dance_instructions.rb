@@ -11,7 +11,7 @@ end
 
 def skip_step(starting_foot)
   puts "Lower #{starting_foot} to the ground"
-  puts "Bounce #{starting_foot} foot back up slightly, kicking it a few inches back"
+  puts "Bounce #{starting_foot} back up slightly, kicking it a few inches back"
   puts "Briefly raise the opposite foot, then the #{starting_foot} twice more"
 end
 
@@ -32,6 +32,7 @@ end
 def bust_a_move
   puts "Be cool"
   puts "Be snazzy!"
+end
 
 def gangnam_style
   starting_stance
