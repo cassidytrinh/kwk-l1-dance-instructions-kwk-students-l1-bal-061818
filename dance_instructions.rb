@@ -1,28 +1,24 @@
 
 def starting_stance
-  puts "Assume the proper stance"
   puts "Plant legs far apart, bend knees slightly and keep posture loose"
 end
+
 def base_footwork
-  puts "1. Lift right foot"
-  puts "2. Return right foot to the ground"
-  puts "3. Finishing with a **small skip-step** backward"
+  puts "Lift right foot"
+  puts "Return right foot to the ground"
+  puts "Finishing with a **small skip-step** backward"
 end
 
-def skip_step(dir)
-  puts "1. Lower #{dir} foot to the ground"
-  puts "2. Bounce #{dir} foot back up slightly, kicking it a few inches back"
-  if dir == "left"
-    puts "3. Left, Right, Left and Left"
-  else
-    puts "3. Right, Left, Right, and Right"
-  end
+def skip_step(starting_foot)
+  puts "Lower #{starting_foot} to the ground"
+  puts "Bounce #{starting_foot} foot back up slightly, kicking it a few inches back"
+  puts "Briefly raise the opposite foot, then the #{starting_foot} twice more"
 end
 
 def bob_the_reins
-  puts "1. Holding your arms out in front of you, straight and at chest level"
-  puts "2. Cross your right wrist over your left and hold them together"
-  puts "3. Lift your arms up and down in a loose bouncing movement, in time with the beat of the song. This movement is repeated **eight** times."
+  puts "Holding your arms out in front of you, straight and at chest level"
+  puts "Cross your right wrist over your left and hold them together"
+  puts "Lift your arms up and down in a loose bouncing movement, in time with the beat of the song. This movement is repeated **eight** times."
 end
 
 def lasso
@@ -31,15 +27,18 @@ def lasso
   puts "Raise right forearm so that it points straight up, and **whip it in small circles** to the beat of the song, as if you were a cowboy holding a rope lasso. This movement is repeated **eight** times as well."
 end
 
+def bust_a_move
+  puts "Be cool"
+  puts "Be snazzy!"
+
 def gangnam_style
   starting_stance
   base_footwork
   bob_the_reins
-  skip_step("left")
-  skip_step("right")
+  skip_step("left foot")
+  skip_step("right foot")
   lasso
-  skip_step("left")
-  skip_step("right")
+  bust_a_move
 end
 
 gangnam_style
